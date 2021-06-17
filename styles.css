@@ -1,6 +1,45 @@
-html body {
+*{
     background-color: #fffbf7;
 }
+
+/* Estilos en el header */
+.header {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0;
+    line-height: 45px;
+  }
+
+ .header > * {
+     display: inline-block;
+     font-size: 16px;
+     vertical-align: middle;
+     height: 100%;
+     line-height: 45px;
+ } 
+
+
+.logo{
+    width: 15%;
+    
+}
+
+.navbar{
+    width: 70%;
+    text-align: center;
+    color: green;
+}
+.action{
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+}
+
+ li{
+     display: inline;
+     list-style: none;
+ } 
 
 h1{
     color: #46484c;
@@ -21,5 +60,5 @@ button{
     color: #fff;
     border-radius: 20px;
     width: 90px;
-    height: 30px;
+    height: 40px;
 }
