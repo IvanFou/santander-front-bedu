@@ -1,12 +1,11 @@
 *{
     background-color: #fffbf7;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Estilos en el header */
 .header {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
     font-size: 0;
     line-height: 45px;
   }
@@ -26,19 +25,40 @@
 }
 
 .navbar{
-    width: 70%;
+    width: 65%;
     text-align: center;
     color: green;
 }
-.action{
-    width: 15%;
-    text-align: right;
+.actions{
+    width: 20%;
     font-size: 14px;
+    display: inline;
+}
+
+.actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .actions a {
+    color: #67b54b;
+  }
+
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
 }
 
  li{
      display: inline;
      list-style: none;
+     margin-left: 25px;
+     color:#025157;
  } 
 
 h1{
@@ -55,7 +75,7 @@ b{
     color: #8b8b8bcc;
 }
 
-button{
+.form button{
     background-color: #025157;
     color: #fff;
     border-radius: 20px;
