@@ -9,8 +9,8 @@
 </head>
 
 <body>
-
-    <header class = "header">
+    <section class="fixed-header">
+         <header class = "header">
          <a href="../matcha/index.html" class="logo">
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="">
         </a>
@@ -28,7 +28,8 @@
             <button>Prueba Gratis</button>
         </div>
     </header>
-
+    </section>
+   
     <!-- Reto 01 -->
     <h1>Hola Mundo!</h1>
     <h2>Soy Carlos Ivan Garcia</h2>
@@ -62,17 +63,35 @@
         <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="" width="800" height="100">
 
         <!-- Seccion del Video -->
-        <section>
-            <video
-            controls
-            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+        <section class="promo"> 
+            <article class="explain"> 
+              <video
+                 controls
+                 poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
             <source
-              type="video/webm"
-              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
+                  type="video/webm"
+                  src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
             <source
-              type="video/mp4"
-              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
-          </video> </section>
-    
+                 type="video/mp4"
+                  src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
+           </video> 
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="">
+            </article>
+            
+          <article class="publicidad">  
+              <h2>Somos creadores de la Web</h2>
+              <p>Si estas leyendo esto es porque eres parte de las personas 
+                  que quieres ser algo mas que usuarios de internet, quieres ser 
+                  parte de los creadores, y este blog es para ti. Unete a la comunidad
+                  mas grande de Mexico, ¡se parte de Bedu!
+              </p>
+              <form>
+                  <p>Unete!</p>
+                  <input type="email" placeholder="Ingresa tu correo!">
+                  <button>Unirse</button>
+              </form>
+          </article>
+        </section>
+        
     </body>
 </html>
