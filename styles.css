@@ -223,12 +223,13 @@ b{
 .cardview button{
     color: white;
     font-family: 'Muli', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #025157;
     border: 0;
     border-radius: 5px;
-    width: 150px;
+    width: 200px;
     height: 40px;
+    margin-left: 20px;
 }
 
 div .description{
