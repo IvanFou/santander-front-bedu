@@ -197,7 +197,7 @@ b{
 }
 
 .overview h3{
-    font-size: 30px;
+    font-size: 50px;
     color: #025157;
     font-family: 'Muli', sans-serif;
 }
@@ -284,7 +284,7 @@ div .description{
 
 .sucess-storie{
     position: absolute;
-    top: 403%;
+    top: 398%;
     right: 16%;
     width: 100px;
     height: 100px;
@@ -302,10 +302,11 @@ div .description{
     border-top-right-radius: 10px;
 }
 
+/* Cuadros */
 .features {
     background-color: #025157;
     margin-left: -1%;
-    margin-right: -1%;
+    margin-right: -0.5%;
     padding: 5% 10%;
     display: grid;
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
@@ -321,7 +322,7 @@ div .description{
     align-items: center;
     overflow: hidden;
   }
-  
+
   .features .feature-art .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
@@ -355,3 +356,51 @@ div .description{
     text-decoration: none;
   }
   
+ .features .feature-art .feature-image{
+    width: 40%;
+    flex: 1;
+    right: -3%;
+    height: 90%;
+ }
+
+ .features .feature-art .feature-image img{
+     width: 150%;
+     height: 90%;
+ }
+
+ /* Does */
+ .does{
+    background-color: #fffbf7;
+    margin-left: -1%;
+    margin-right: -0.5%;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.does .titulo h3{
+    color:#025157;
+    font-size: 40px;
+    font-family: 'Milo', sans-serif;
+}
+
+.does .titulo b{
+    color: #67b54b;
+}
+
+.does .titulo button{
+    background-color: #025157;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height: 50px;
+}
+
+.does .titulo p{
+    font-size: 20px;
+    font-family: 'Milo', sans-serif;
+    margin-bottom: 30px;
+}
