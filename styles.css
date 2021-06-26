@@ -369,27 +369,27 @@ div .description{
  }
 
  /* Does */
- .does{
+ .titleSection{
     background-color: #fffbf7;
     margin-left: -1%;
     margin-right: -0.5%;
-    padding: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1%;
+    display: block;
+    text-align: center;
 }
 
-.does .titulo h3{
+.titleSection > h3{
     color:#025157;
     font-size: 40px;
     font-family: 'Milo', sans-serif;
+    margin-bottom: 0.5%;
 }
 
-.does .titulo b{
+.titleSection b{
     color: #67b54b;
 }
 
-.does .titulo button{
+.titleSection button{
     background-color: #025157;
     color: #fff;
     font-size: 14px;
@@ -397,10 +397,71 @@ div .description{
     border: 0;
     width: 150px;
     height: 50px;
+    margin-bottom: 2%;
 }
 
-.does .titulo p{
-    font-size: 20px;
+.titleSection > p{
+    color: #343434;
+    margin: 0 auto;
+    font-size: 17px;
     font-family: 'Milo', sans-serif;
     margin-bottom: 30px;
+    line-height: 1.5;
+    max-width: 50%;
+}
+
+.progress{
+    display: grid;
+    padding: 2% 10%;
+    justify-content: center;
+    height: 650px;
+    margin-bottom: -80px;
+    grid-gap: 0%;
+    grid-template-columns: repeat(4, 270px)
+}
+
+.progress .progress-art{
+    background-color: white;
+    border:  rgb(197, 197, 197) solid 0.1px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    align-items: center;
+    overflow:hidden;
+}
+
+.progress .progress-art .progress-image img{
+    width: 169%;
+    height: 300%;
+    margin-left: -30%;
+    margin-top: -30%;
+}
+
+.progress .progress-art h4{
+    color: #025157;
+    font-size: 30px;
+    font-family: 'Milo',sans-serif;
+    margin-bottom: -70%;
+    margin-top: -60%;
+}
+
+.progress .progress-art p{
+    color: gray;
+    font-size: 16px;
+    text-align: left;
+    padding: 2% 10%;
+}
+
+.progress .progress-art a{
+    color: #67b54b;
+    font-size: 16px;
+    margin-top: -10%;
+}
+
+.progress .progress-art img{
+    width: 15%;
+    height: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
 }
