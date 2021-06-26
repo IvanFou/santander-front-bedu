@@ -311,9 +311,9 @@ div .description{
     width: 110%;
 }
 
-.sucess-storie{
+.cardview .sucess-storie{
     position: absolute;
-    top: 398%;
+    margin-top: 8%;
     right: 16%;
     width: 100px;
     height: 100px;
