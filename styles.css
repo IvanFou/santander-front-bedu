@@ -92,9 +92,12 @@ body{
      display: inline;
      list-style: none;
      margin-left: 25px;
-     color:#025157;
+     color:#025157;;
  } 
 
+ .margin{
+     margin-top: 100px;
+ }
 h1{
     color: #46484c;
     font-family: Arial, Helvetica, sans-serif;
@@ -494,4 +497,138 @@ div .description{
     height: 5%;
     padding-top: 2%;
     padding-left: 5%;
+}
+/* Media Query */
+
+/* dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar, .actions {
+        display: none;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .margin{
+        margin-top: 90px;
+    }
+
+    .banner> img{
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .intro > img{
+        width: 120%;
+        margin-left: -5%;
+    }
+
+    .form > form{
+       flex-direction: column; 
+    }
+
+    .form > input{
+        width: 65%;
+        height: 30px;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border-color: rgb(173, 172, 172) solid 0.5;
+    }
+
+    .form button{
+        color: white;
+        background-color: #67b54b;
+        margin-left: 40%;
+        border: 0;
+        border-radius: 2px;
+    }
+
+    .promo{
+        margin-left: 50px;
+        flex-direction: column; 
+    }
+
+    .promo video{
+        margin-left: 8%;
+    }
+
+    .publicidad{
+        margin-top: 20px;
+    }
+
+    .features {
+        grid-template: none;
+        margin-right: -2%;
+    }
+
+    .feature-image{
+        display: none;
+    }
+
+    .stories{
+        display:inline-block;
+        align-items: center;
+        text-align:justify;
+        padding: 5%;
+        margin-right: -1.5%;
+    }
+
+    .stories .overview{
+        margin-top: 2%;
+        flex:none;
+        padding-right: 15px;
+    }
+
+    .stories .overview h3{
+        font-size: 30px;
+    }
+
+    .stories .overview img{
+        width: 500px;
+        max-width: 120%;
+        margin-bottom: 50px;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+
+    .cardview{
+        display: none;
+    }
+
+    .progress{
+        grid-template: none;
+        flex: 2;
+    }
+
+    .progress img{
+        display: none;
+    }
+
+    .progress .progress-art h4{
+        margin-top: -5%;
+        margin-bottom: -5px;
+    }
+
+}
+
+/* dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/* dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
 }
