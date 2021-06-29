@@ -399,9 +399,10 @@ div .description{
 
  /* Does */
  .titleSection{
-    background-color: #fffbf7;
+    background-color: #f0eee5;
     margin-left: -1%;
     margin-right: -0.5%;
+    height: 890px;
     padding: 1%;
     display: block;
     text-align: center;
@@ -443,7 +444,7 @@ div .description{
     display: grid;
     padding: 2% 10%;
     justify-content: center;
-    height: 650px;
+    height: 590px;
     margin-bottom: -80px;
     grid-gap: 0%;
     grid-template-columns: repeat(4, 270px)
