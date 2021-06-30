@@ -501,7 +501,7 @@ div .description{
 /* Media Query */
 
 /* dispositivos móviles en vista viewport (vertical) */
-@media (max-width: 975px) {
+@media (max-width: 1200px) {
     .header img{
         margin-top: 11px;
     }
