@@ -501,7 +501,11 @@ div .description{
 /* Media Query */
 
 /* dispositivos móviles en vista viewport (vertical) */
-@media (max-width: 575px) {
+@media (max-width: 975px) {
+    .header img{
+        margin-top: 11px;
+    }
+
     .navbar, .actions {
         display: none;
     }
@@ -546,7 +550,7 @@ div .description{
     }
 
     .promo{
-        margin-left: 50px;
+        margin-left: 10%;
         flex-direction: column; 
     }
 
@@ -599,7 +603,8 @@ div .description{
 
     .progress{
         grid-template: none;
-        flex: 2;
+        display: block;
+        flex: 20;
     }
 
     .progress img{
