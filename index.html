@@ -4,37 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Ivan Garcia</title>
 </head>
 
 <body>
-    <section class="fixed-header">
-         <header class = "header">
-         <a href="../matcha/index.html" class="logo">
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+            alt="Matcha"
+          />
         </a>
-        <nav class="navbar">
-            <ul>
-                <li><a>Plataform </a></li>
-                <li><a>Pricing</a></li>
-                <li><a>Customer </a></li>
-                <li><a>Resource </a></li>
-                <li><a>About </a></li>
-            </ul>
-        </nav>
-        <div class="actions">
-            <a href="">Inciar Sesion</a>
-            <button>Prueba Gratis</button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../matcha/index.html">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 actions">
+            <a href="">Sign In</a>
+            <button>Start free trial</button>
+          </form>
         </div>
-    </header>
-    </section>
-   
+      </nav>
+
     <!-- Reto 01 -->
     <section class="margin">
         <h1>Hola Mundo!</h1>
-        <h2>Soy Carlos Ivan Garcia</h2>
-        <h3>Estudiante Universitario</h3>
+        <h3>Soy Carlos Ivan Garcia <span class="badge badge-success">Autor</span></h3>
         <h4>Con beca santander</h4>
         <h5>Emocionado por aprender</h5>
         <h6>Este es el fin</h6>
@@ -49,20 +72,54 @@
     </p>
 
     <!-- Reto 03 -->
-    <form action="" class="form">
-        <input type="text" id="name" name="fname" placeholder="Name">
-        <br>
-        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-        <br>
-        <input type="number" id="age" name="age" placeholder="Edad" min="18">
-        <br>
-        <input type="email" id="email" name="email" placeholder="Email">
-        <br>
-        <input type="password" id="password" name="password" placeholder="Password">
-        <br><br>
-        <button type="submit">Enviar</button>
-    </form>
-        <br><br>
+    <form class="form-boot">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Correo</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Colonia</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Estado</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">C.P.</label>
+            <input type="text" class="form-control" id="inputCP">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Acepto terminos y condiciones
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrarte</button>
+      </form>
+
+
 
         <figure class="banner">
             <img class="imagen-logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="">
@@ -207,6 +264,40 @@
             </article>
         </section>
 
+    <!-- Carousel -->
+      <section class="carousel-content">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://miro.medium.com/max/3840/0*ZpjhBs0gR5oSd3Il" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.cloudstudio.mx/blog/wp-content/uploads/2019/01/js.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://miro.medium.com/max/1920/1*MCU8J5-roudxIIYt1U1J1A.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>  
+          </div>
+          <article class="carousel-descripcion">
+            <h3>Programming languages ​​we use</h3>
+            <p>Are you tired of wasting time publishin blog articles 
+                to only see a tricle of traffic and no impact on sales? 
+                Join hundreds of business owners and ecommerce marketers who rely
+                   on Matcha for quality content consisten performace from their blogs
+            </p>
+            </article>
+      </section>
+       
+
 <!-- How does Matcha wok? -->
         <section class="titleSection">
                 <h3>How does Matcha work?</h3>
@@ -216,7 +307,6 @@
                 </p>
                 <button>Explore the plataform</button>
             <div class="progress">
-
                 <article class="progress-art">
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="">
                     <figure class="progress-image">
@@ -266,5 +356,20 @@
         </section>
 
 <!--  -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+    ></script>
     </body>
 </html>

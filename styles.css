@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 
 *{
     font-family:Arial, Helvetica, sans-serif;
@@ -15,12 +16,19 @@
     z-index: 1030;
 }
 
+.form-boot{
+    width: 50%;
+    margin-left: 50px;
+}
+
+
 button:hover{
     cursor: pointer;
 }
 
 body{
-    background-color: #faf9f9;
+    background-color: #fffbf7;
+    margin: 10px;
 }
 /* Estilos en el header */
 .header {
@@ -39,54 +47,53 @@ body{
  } 
 
 
-.logo{
-    width: 15%;
-    
-}
-
-.navbar{
-    width: 65%;
-    text-align: center;
-    color: green;
-}
-
-.navbar a:hover{
-    cursor: pointer;
-    color: gray;
-}
-
-.actions{
-    width: 20%;
+ .navbar {
+    background-color: #fffbf7;
+  }
+  
+  .navbar-light .nav-item .nav-link {
+    color: #025157;
+  }
+  
+  .navbar-light .navbar-toggler {
+    border-color: #025157;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .actions {
+    text-align: right;
+    font-weight: 600;
     font-size: 14px;
-    display: inline;
-}
-
-.actions > * {
+  }
+  
+  .acccion > * {
     margin-right: 10px;
     margin-left: 10px;
   }
   
-  .actions a {
+  .actions a{
     color: #67b54b;
     text-decoration: none;
-    font-size: 15px;
+    margin-right: 20px;
   }
 
-  .actions a:hover{
-      color: black;
-      text-decoration: underline;
-  }
-
-.actions button{
+.actions a:hover{
+    cursor: pointer;
+} 
+  
+  .actions button {
     color: white;
-    height: 50px;
     background-color: #67b54b;
+    padding-left: 14px;
     padding-right: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
-}
+  }
 
  li{
      display: inline;
@@ -98,6 +105,7 @@ body{
  .margin{
      margin-top: 100px;
  }
+
 h1{
     color: #46484c;
     font-family: Arial, Helvetica, sans-serif;
@@ -263,6 +271,7 @@ b{
 }
 
 .cardview h4{
+    margin-top: 25px;
     font-size: 15px;
     color: #025157;
     font-family: 'Muli', sans-serif;
@@ -399,6 +408,25 @@ div .description{
      width: 150%;
      height: 90%;
  }
+/* Carouse */
+.carousel-content{
+    width: 50%;
+    margin-left: -0.8%;
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+}
+
+.carousel-descripcion{
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-right: -19%;
+    line-height: 25px;
+}
+.carousel-descripcion h3{
+    color: #023047;
+    font-size: 40px;
+    line-height: 80px;
+}
 
  /* Does */
  .titleSection{
@@ -412,6 +440,7 @@ div .description{
 }
 
 .titleSection > h3{
+    margin-top: 35px;
     color:#025157;
     font-size: 40px;
     font-family: 'Milo', sans-serif;
@@ -450,7 +479,9 @@ div .description{
     height: 590px;
     margin-bottom: -80px;
     grid-gap: 0%;
-    grid-template-columns: repeat(4, 270px)
+    grid-template-columns: repeat(4, 270px);
+    background-color: #f0eee5;
+    line-height: 25px;
 }
 
 .progress .progress-art{
@@ -465,9 +496,9 @@ div .description{
 }
 
 .progress .progress-art .progress-image img{
-    width: 169%;
-    height: 300%;
-    margin-left: -30%;
+    width: 99%;
+    height: 70%;
+    margin-left: -10%;
     margin-top: -30%;
 }
 
@@ -476,7 +507,7 @@ div .description{
     font-size: 30px;
     font-family: 'Milo',sans-serif;
     margin-bottom: -70%;
-    margin-top: -60%;
+    margin-top: -90%;
 }
 
 .progress .progress-art p{
@@ -498,17 +529,22 @@ div .description{
     padding-top: 2%;
     padding-left: 5%;
 }
+
+
+
+
+
 /* Media Query */
 
 /* dispositivos móviles en vista viewport (vertical) */
-@media (max-width: 1200px) {
+@media (max-width: 720px) {
     .header img{
         margin-top: 11px;
     }
 
-    .navbar, .actions {
+    /* .navbar, .actions {
         display: none;
-    }
+    } */
 
     h1{
         font-size: 30px;
