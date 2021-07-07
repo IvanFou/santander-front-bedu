@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "Esta es mi practica de la beca de santander Bedu si estan leyendo esto es porque todo esta funcionando  correctamente",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanFou/santander-front-bedu.git"
+  },
+  "author": "IvanGarcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanFou/santander-front-bedu/issues"
+  },
+  "homepage": "https://github.com/IvanFou/santander-front-bedu#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

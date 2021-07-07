@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Muli',sans-serif;
     box-sizing: border-box;
 }
 
@@ -106,26 +106,44 @@ body{
      margin-top: 100px;
  }
 
-h1{
-    color: #46484c;
-    font-family: Arial, Helvetica, sans-serif;
+.article{
+    margin-top: 10%;
+    margin-left: 8%;
+    justify-content: center;
+    padding: 100px;
 }
 
-h2{
-    color: #46484c;
-    font-family: Arial, Helvetica, sans-serif;
+.article h1{
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
 }
 
-b{
-    color: #8b8b8bcc;
+.article h4{
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Muli',sans-serif;
 }
 
-.form button{
-    background-color: #025157;
-    color: #fff;
-    border-radius: 20px;
-    width: 90px;
-    height: 40px;
+.input-group-text{
+    background-color: #a1d683;
+    border: 0;
+    cursor: pointer;
+}
+
+.input-group{
+    width: 500px;
+    margin-left: 20%;
+}
+
+.article p{
+    margin-top: 10px;
+    color: gray;
+    width: 500px;
+    margin-left: 20%; 
+    text-align: center;
 }
 
 .banner{
@@ -134,6 +152,7 @@ b{
 }
 
 .banner img{
+    margin-top: -5%;
     width: 35%;
     height: 22%;
     margin-left: 30%;

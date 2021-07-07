@@ -1,0 +1,243 @@
+@use 'global' as *;
+
+.blog{
+    background-color: $mycolor;
+    max-width: unset;
+    padding: 3% 10%;
+    margin-left: -60px;
+    margin-right: -9px;
+    display: flex;
+
+    .title{
+        @extend %base-title;
+        font-size: 36px;
+    }
+
+    .process-list{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .process{
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .process .process-icon img{
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    & > div{
+        &> h3 {
+            color: $dark-green-text;
+            margin-bottom: 0px;
+        }
+    }
+
+    .process .process-description{
+        font-size: 16px;
+        margin-right: 50px;
+        width: 330px;
+        color: $dark-green-text;
+    }
+
+    button{
+        background-color: $dark-green-text;
+        border-radius: 5px;
+        border: 0;
+        height: 50px;
+        width: 190px;
+        color: $mycolor;
+    }
+
+   .card{
+        width: 360px;
+        margin-right: 20px;
+    }
+
+    .card-img-top{
+        height: 250px;
+    }
+
+    .category{
+        color: $green-background;
+    }
+
+    .read-time{
+        color: $gray-color;
+    }
+
+    .author{
+        display: grid;
+        grid-template-columns: repeat(2,110px);
+    }
+    
+    .author img{
+        border-radius: 20px;
+        width: 70px;
+    }
+
+    .author p{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .card{
+        margin-left: -50px;
+    }
+
+}
+
+.home__people{
+    background-image: url("https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 360px;
+}
+
+.people__try{
+    background-color: #96d178;
+    margin-left: -10px;
+    margin-top: -2%;
+    margin-right: -0.5%;
+    padding: 5%;
+
+    h3{
+        color: $dark-green-text;
+        margin-left: 30%;
+        font-size: 40px;
+        font-family: $font-matcha;
+    }
+
+    .input-group{
+        margin-top: 20px;
+        margin-left: 28%;
+        height: 50px;
+    }
+
+    .input-group-text{
+        background-color: $dark-green-text;
+        color: $mycolor;
+    }
+
+    .form-control{
+        height: 50px;
+    }
+
+    p{
+       color: $mycolor;
+       font-size: 16px;
+       margin-top: 20px;
+       margin-left: 28%;
+    }
+}
+
+.try--free{
+    background-color: $background;
+    margin-left: -10px;
+    padding: 5% 10%;
+
+    .try--content{
+        padding: 5%;
+        background-color: $dark-green-text;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 380px);
+    }
+
+    .try--descripcion{
+        margin-left: 8px;
+        width: 300px;
+        color: $mycolor;
+    }
+
+    .try--descripcion h3{
+        font-size: 32px;
+        font-style:unset;
+        margin-bottom: 20px;
+    }
+
+    .try--descripcion a{
+        color: $green-background;
+        text-decoration: none;
+    }
+
+    .try--input{
+        margin-left: 50px;
+    }
+
+    .input-group{
+        margin-left: -20px;
+    }    
+
+    .input-group-text{
+        background-color: #91d16b;
+        border: 0;
+        cursor: pointer;
+        height: 50px;
+    }
+
+    .form-control{
+        height: 50px;
+        width: 250px;
+    }
+
+    .try--input p{
+        margin-top: 20px;
+        color: $mycolor;
+        font-size: 14px;
+        width: 650px;
+    }
+}
+
+.footer__section{
+   display: grid;
+   grid-template-columns: repeat(2,500px);
+   margin-left: 50px;
+
+    h5{
+        color: $dark-green-text;
+    }
+
+    h3{
+        color: $dark-green-text;
+        font-size: 32px;
+    }
+
+
+    .input-group-text{
+        height: 38px;
+    }
+
+    .input-group {
+        width: 500px;
+        margin-left: 0%;
+    }
+
+    .section__columns{
+        margin-left: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+    }
+
+    .section__columns a{
+      color: $gray-color;
+      text-decoration: none;
+    }
+}
+
+.final{
+    margin-top: 50px;
+    margin-left: 50px;
+
+    img{
+        margin-left: 20px;
+    }
+}
+
+.footer__text{
+    margin-left: 79%;
+    margin-top: -2%;
+}
